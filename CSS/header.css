@@ -1,5 +1,7 @@
 .header{
   background-color: #1f2937;
+  min-height: 100vh;
+  color:white;
 }
 
 .navbar{
@@ -11,7 +13,6 @@
 .title{
   font-size: 24px;
   font-weight: 700;
-  color:white;
   text-align: center;
 
   padding-top: 16px;
@@ -32,6 +33,41 @@
   
 }
 
+.hero{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.hero-content{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 560px;
+  justify-content: center;
+}
+
+.signup{
+  border: none;
+  width: 121px;
+  height: 42px;
+  background-color: #3882f6;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 12px 32px;
+  color: white;
+}
+
+.title{
+  font-weight: 1000;
+}
+
+.img{
+  border-radius: 20px;
+  border: none;
+  max-width: 100%;
+}
+
 @media screen and (min-width:640px) {
   /* nav */
   .navbar{
@@ -40,5 +76,8 @@
   }
   .nav-link-group{
     padding-bottom: 0;
+  }
+  .hero{
+    flex-direction: row;
   }
 }
