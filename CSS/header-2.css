@@ -195,5 +195,13 @@
     .group{
       text-align: left;
     }
+    .hero-2{
+      flex-direction: row;
+      margin: 0 auto;
+      gap: 100px;;
+    }
+    .box{
+      gap: 100px;;
+    }
   }
 }
