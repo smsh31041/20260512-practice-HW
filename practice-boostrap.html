@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/reset.css" />
-    <link rel="stylesheet" href="./CSS/global.css" />
+    <!-- <link rel="stylesheet" href="./CSS/reset.css" /> -->
+    <!-- <link rel="stylesheet" href="./CSS/global.css" /> -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,13 +14,152 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header>
+    <!-- boostrap內建.container的格式，所以這個class放哪裡很重要 -->
+    <div class="bg-dark">
+      <header class="container pt-2 pb-5">
+        <!-- 導覽列：用 d-flex 讓 Logo 和連結左右分開 -->
+        <nav class="d-flex justify-content-between mb-5">
+          <div class="fs-4 fw-bold text-white">Header Logo</div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">intro</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">more</a>
+            </li>
+          </ul>
+        </nav>
 
+        <div class="row align-items-center">
+          <div class="text-white text-center">
+            <h1 class="display-5 fw-bold">This website is awesome</h1>
+            <p class="fs-6 text-white">
+              This website has some subtext that goes here under the main title.
+              It’s a smaller font and the color is lower contrast.
+            </p>
+            <button class="btn fw-bold text-white bg-primary mb-3">
+              Sign up
+            </button>
+          </div>
+          <div class="col-md-12 mb-5">
+            <!-- img-fluid 確保圖片不會超出容器寬度 -->
+            <img
+              src="https://pub-e5ad6fa58965460ca72f9f8145a4d629.r2.dev/openai-images/70e942ed-c753-40c6-9789-dfa2f6c8fd0b.png"
+              class="img-fluid rounded"
+              alt="Hero"
+            />
+          </div>
+        </div>
       </header>
-      
-    </div>
+      <section class="py-5 bg-white text-center">
+        <div class="container">
+          <h2 class="fw-bold mb-5 display-5 ">
+            Some random information.
+          </h2>
 
+          <div class="row justify-content-center g-6">
+            <div class="col-12 col-md-6 col-xl-3 mb-4 mb-md-0">
+              <div class="d-flex justify-content-center mb-2">
+                <img
+                  src="https://pub-e5ad6fa58965460ca72f9f8145a4d629.r2.dev/openai-images/70e942ed-c753-40c6-9789-dfa2f6c8fd0b.png"
+                  class="img-fluid rounded-4"
+                  style="max-width: 200px; aspect-ratio: 1/1; object-fit: cover"
+                  alt="info"
+                />
+              </div>
+              <p class="text-primary-emphasis fs-6 px-3 " >
+                this is some subtext under an illustration or image
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 mb-4 col-xl-3  mb-md-0">
+              <div class="d-flex justify-content-center mb-2">
+                <img
+                  src="https://pub-e5ad6fa58965460ca72f9f8145a4d629.r2.dev/openai-images/70e942ed-c753-40c6-9789-dfa2f6c8fd0b.png"
+                  class="img-fluid rounded-4"
+                  style="max-width: 200px; aspect-ratio: 1/1; object-fit: cover"
+                  alt="info"
+                />
+              </div>
+              <p class="text-primary-emphasis fs-6 px-3">
+                this is some subtext under an illustration or image
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 mb-4 col-xl-3  mb-md-0">
+              <div class="d-flex justify-content-center mb-2">
+                <img
+                  src="https://pub-e5ad6fa58965460ca72f9f8145a4d629.r2.dev/openai-images/70e942ed-c753-40c6-9789-dfa2f6c8fd0b.png"
+                  class="img-fluid rounded-4"
+                  style="max-width: 200px; aspect-ratio: 1/1; object-fit: cover"
+                  alt="info"
+                />
+              </div>
+              <p class="text-primary-emphasis fs-6 px-3">
+                this is some subtext under an illustration or image
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 mb-4 col-xl-3  mb-md-0">
+              <div class="d-flex justify-content-center mb-2">
+                <img
+                  src="https://pub-e5ad6fa58965460ca72f9f8145a4d629.r2.dev/openai-images/70e942ed-c753-40c6-9789-dfa2f6c8fd0b.png"
+                  class="img-fluid rounded-4"
+                  style="max-width: 200px; aspect-ratio: 1/1; object-fit: cover"
+                  alt="info"
+                />
+              </div>
+              <p class="text-primary-emphasis fs-6 px-3">
+                this is some subtext under an illustration or image
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- --- -->
+    <section class="py-5 bg-light text-center text-secondary">
+      <div class="container px-4">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 style-quote">
+            <p class="fs-4 fst-italic text-dark mb-2 text-start text-md-center">
+              This is an inspiring quote, or a testimonial from a customer. Maybe it’s just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.
+            </p>
+            <p class="fw-bold text-dark text-end mb-0">— Thor, God of Thunder</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white">
+      <div class="container px-4">
+        <div class="bg-primary text-white p-4 p-md-5 rounded-3 text-center text-md-start">
+          <div class="row align-items-center justify-content-between g-4">
+            
+            <div class="col-12 col-md-8">
+              <h3 class="fw-bold mb-2">Call to action! It's time!</h3>
+              <p class="mb-0 text-white-75 fs-6">
+                Sign up for our product by clicking that button right over there!
+              </p>
+            </div>
+            
+            <div class="col-12 col-md-4 text-center text-md-end">
+              <button class="btn btn-outline-light fw-bold px-4 py-2">Sign up</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-0 text-white fs-6">Copyright © The Odin Project 2021</p>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
